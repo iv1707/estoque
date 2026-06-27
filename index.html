@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Estoque</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>📦 Sistema de Estoque</h1>
+            <p>Controle simples e eficiente</p>
+        </header>
+
+        <section class="resumo">
+
+            <div class="card-info">
+                <h2 id="totalProdutos">0</h2>
+                <span>Produtos cadastrados</span>
+            </div>
+
+            <div class="card-info">
+                <h2 id="valorTotal">R$ 0,00</h2>
+                <span>Valor total do estoque</span>
+            </div>
+
+        </section>
+
+        <section class="menu-principal">
+
+            <!-- LINK CORRETO: ADICIONAR -->
+            <a href="adicionar.html" class="card-menu">
+                <div class="icone">➕</div>
+                <h2>Adicionar Produto</h2>
+                <p>Cadastrar novos itens no estoque</p>
+            </a>
+
+            <!-- LINK CORRETO: ESTOQUE -->
+            <a href="estoque.html" class="card-menu">
+                <div class="icone">📦</div>
+                <h2>Ver Estoque</h2>
+                <p>Visualizar e gerenciar produtos</p>
+            </a>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        atualizarDashboard();
+    </script>
+
+</body>
+
+</html>
