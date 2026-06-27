@@ -1,1 +1,74 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Produto</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- MENU SUPERIOR -->
+        <nav class="topo">
+            <a href="index.html">🏠 Início</a>
+            <a href="estoque.html">📦 Estoque</a>
+        </nav>
+
+        <!-- FORMULÁRIO -->
+        <div class="form-card">
+
+            <h1>➕ Adicionar Produto</h1>
+
+            <p class="subtitulo">Cadastre um novo item no estoque</p>
+
+            <div class="campo">
+                <label>Nome do Produto</label>
+                <input type="text" id="nome" placeholder="Ex: Café Pilão 500g">
+            </div>
+
+            <div class="campo">
+                <label>Categoria</label>
+                <select id="categoria">
+                    <option>Alimentos</option>
+                    <option>Bebidas</option>
+                    <option>Limpeza</option>
+                    <option>Eletrônicos</option>
+                    <option>Outros</option>
+                </select>
+            </div>
+
+            <div class="duplo">
+
+                <div class="campo">
+                    <label>Quantidade</label>
+                    <input type="number" id="quantidade" placeholder="0">
+                </div>
+
+                <div class="campo">
+                    <label>Valor Unitário (R$)</label>
+                    <input type="number" step="0.01" id="valor" placeholder="0.00">
+                </div>
+
+            </div>
+
+            <button class="btn-principal" type="button" onclick="adicionarProduto()">
+                Salvar Produto
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="notificacao" class="notificacao"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
